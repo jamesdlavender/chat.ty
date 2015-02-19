@@ -1,0 +1,193 @@
+body{
+padding-top:2em;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+margin: 0;
+}
+.c-cta{
+margin : 2em 0;
+}
+
+@media only screen and (max-width:768px){
+body{
+padding-top: 0;
+}
+}
+
+#chat-bar {
+	background-color: #333333 ;
+	border-top: 1px solid #CCCCCC ;
+	bottom: 0px ;
+	font-family: verdana, arial ;
+	font-size: 11px ;
+	height: 50px ;
+	position: fixed ;
+	width: 100% ;
+	z-index: 1000 ;
+	}
+
+#chat-bar-frame {
+	height: 30px ;
+	margin: 0px 10px 0px 10px ;
+	position: relative ;
+	}
+
+#chat-bar-content {
+	padding: 3px 0px 0px 0px ;
+	}
+
+#chat-btn {
+	background-color: #584875 ;
+	border: 1px solid #362357 ;
+	color: #fff ;
+	display: block ;
+	width: 260px;
+	text-align: center ;
+	text-decoration: none ;
+	float:left;
+	}
+
+#menu a {
+background-color: #F0EEEF ;
+border: 1px solid #FFFFFF ;
+color: #000000 ;
+display: block ;
+margin-bottom: 4px ;
+padding: 5px 0px 5px 5px ;
+text-decoration: none ;
+}
+
+#menu a:hover {
+	background-color: #666666 ;
+	border-color: #000000 ;
+	color: #FFFFFF ;
+	}
+
+/*
+| -------------------------------------------------- |
+| Chat Popup styling                
+| -------------------------------------------------- |
+*/	
+
+.headerchat{
+    background-color: #8600cc ;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    color: #fff;
+	height: 30px;
+	line-height: 30px;
+}
+.users {
+    background-color: #fff ;
+    border: 1px solid #999 ;
+    bottom: 30px ;
+    display: none ;
+    left: 11px ;
+     position: fixed ;
+    width: 300px ;
+    min-height: 300px;
+}
+.messages {
+    background-color: #fff ;
+    border: 1px solid #999 ;
+    bottom: 30px ;
+    display: none ;
+    left: 11px ;
+    width: 300px ;
+	position: fixed ;
+    min-height: 150px;
+    max-height: 500px;
+}
+.gray{
+    color:#aaa;
+}
+.chat{
+    word-wrap:break-word;
+    width: 290px;
+    overflow:hidden;
+	padding: 5px;
+}
+.username{
+    text-decoration: none;
+    color: #584875;
+}
+.username:hover{
+    text-decoration: none;
+    color: #6699aa;
+}
+.conversation{
+    width:80%;
+    padding: 3px;
+    border-bottom: 1px dotted #999;
+    float: right;
+}
+.conversationpicture{
+    float:left;
+}
+.closecontainer{
+    float: right;
+}
+.close, .close:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+	margin-right:5px;
+}
+.buddycontainer
+{
+    float:left;
+}
+.formchattext
+{
+    font-family:verdana;
+    font-size:10px;
+    border:1px solid #ccc;
+    width:270px;
+}
+.newmessage
+{
+    float:left;
+    height: 100px;
+    vertical-align: middle;
+	margin-left: -140px;
+	margin-top: -7px;
+}
+
+/*
+| -------------------------------------------------- |
+| IE 6 FIXED POSITION HACK                 
+| -------------------------------------------------- |
+*/
+
+html,
+body,
+#site-body-container {
+	_height: 100% ;
+	_overflow: hidden ;
+	_width: 100% ;
+	}
+
+#site-body-container {
+	_overflow-y: scroll ;
+	_overflow-x: hidden ;
+	_position: relative ;
+	}
+
+/* To make up for scroll-bar. */
+#chat-bar {
+	_bottom: -1px ;
+	_position: absolute ;
+	_right: 16px ;
+	}
+
+/* To make up for overflow left. */
+#chat-bar-frame {
+	_margin-left: 26px ;
+	}
+
+/* To fix IE6 display bugs. */
+#menu a {
+	_display: inline-block ;
+	_width: 99% ;
+	}

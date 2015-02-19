@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets)
+RewriteRule ^(.*)$ /chat.ty/index.php/$1 [L]
+
+RewriteBase /
+RewriteRule ^([a-zA-Z0-9]+)/$ /$1 [L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([a-zA-Z0-9]+)
+RewriteRule ^([a-zA-Z0-9]+)$ /%1/? [R=301,L]
+
